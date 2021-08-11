@@ -3,11 +3,13 @@ require __DIR__ . './../vendor/autoload.php';
 
 use Orbitale\Component\ImageMagick\Command;
 
-//Windows
-$command = new Command('C:\ImageMagick-7.1.0-Q16-HDRI\magick.exe');
+// Linux
+//$libraryPath = '/usr/bin/convert';
 
-//Linux
-//$command = new Command('/usr/bin/convert');
+//Windows
+$libraryPath = 'C:\ImageMagick-7.1.0-Q16-HDRI\magick.exe';
+
+$command = new Command($libraryPath);
 
 $response = $command
     ->convert('background.png')
