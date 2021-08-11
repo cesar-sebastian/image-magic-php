@@ -1,0 +1,19 @@
+{
+    "name": "cesar/orbitale-image-magick-php",
+    "description": "test lib",
+    "require": {
+        "orbitale/imagemagick-php": "v3.2.1"
+    },
+    "license": "free",
+    "autoload": {
+        "psr-4": {
+            "Cesar\\OrbitaleImageMagickPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Cesar",
+            "email": "cesar.carrazana@acilia.es"
+        }
+    ]
+}
